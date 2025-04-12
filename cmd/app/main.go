@@ -10,7 +10,7 @@ func main() {
 	router := routes.NewRouter()
 
 	port := ":8080"
-	addr := fmt.Sprintf(":%d", port)
+	addr := fmt.Sprintf(":%s", port)
 	fmt.Printf("Server is running on %s\n", addr)
 	err := http.ListenAndServe(addr, router)
 	if err != nil {
